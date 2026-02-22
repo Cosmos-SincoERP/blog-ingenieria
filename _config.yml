@@ -1,0 +1,82 @@
+lang: es-ES
+timezone: America/Bogota
+
+title: Blog de Ingeniería Cosmos
+tagline: Tecnología y desarrollo en Cosmos Sincosoft
+description: Blog técnico del equipo de ingeniería
+avatar: /assets/img/favicons/favicon-96x96.png
+
+url: "https://cosmos-sincoerp.github.io"
+baseurl: "/blog-ingenieria"
+
+github:
+  username: Cosmos-SincoERP
+
+social:
+  name: Cosmos SincoERP
+  email: ""
+  links:
+    - https://github.com/Cosmos-SincoERP
+
+theme: jekyll-theme-chirpy
+
+plugins: []
+
+paginate: 10
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: false
+      toc: true
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - package*.json
