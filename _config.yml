@@ -4,7 +4,7 @@ timezone: America/Bogota
 title: Blog de Ingeniería Cosmos
 tagline: Tecnología y desarrollo en Cosmos Sincosoft
 description: Blog técnico del equipo de ingeniería
-avatar: /assets/img/favicons/favicon-96x96.png
+avatar: /assets/img/cosmos-logo.png
 
 url: "https://cosmos-sincoerp.github.io"
 baseurl: "/blog-ingenieria"
