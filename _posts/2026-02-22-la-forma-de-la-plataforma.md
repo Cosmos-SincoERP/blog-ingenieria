@@ -60,7 +60,7 @@ Vamos a usar la arquitectura de referencia de Golding para diseñar el proyecto 
 - **Control Plane:** El cual es la aplicación que se comporta como la capa inferior de Cosmos sobre la cual se construyen las distintas aplicaciones.
 - **Application Plane:** Que son todas las aplicaciones ofrecidas dentro de la solución a los usuarios.
 
-![Application plane y Control Plane]({{ site.baseurl }}/assets/img/la-forma-de-la-plataforma/application-plane-control-plane.png)
+![Application plane y Control Plane](/assets/img/la-forma-de-la-plataforma/application-plane-control-plane.png)
 _Application Plane y Control Plane: Tomada de Building Multi-Tenant SaaS Architectures_
 
 ## Control Plane de Cosmos
