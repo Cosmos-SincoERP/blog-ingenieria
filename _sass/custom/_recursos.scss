@@ -1,0 +1,113 @@
+/* Estilos para la sección de Recursos */
+
+.recurso-libro-info {
+  background-color: var(--card-bg);
+  border: 1px solid var(--main-border-color);
+  color: var(--text-color);
+}
+
+.recurso-libro-portada {
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.recurso-libro-meta {
+  dt {
+    color: var(--heading-color);
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.5rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  dd {
+    margin-bottom: 0.25rem;
+    color: var(--text-color);
+  }
+}
+
+.recurso-disclaimer {
+  background-color: rgba(var(--bs-warning-rgb), 0.1);
+  border-color: rgba(var(--bs-warning-rgb), 0.3);
+  color: var(--text-color, inherit);
+
+  .alert-heading {
+    color: var(--heading-color);
+    font-size: 1rem;
+  }
+}
+
+.recurso-capitulos {
+  h2 {
+    color: var(--heading-color);
+  }
+
+  .list-group-item {
+    background-color: var(--card-bg);
+    border-color: var(--main-border-color);
+    color: var(--text-color);
+  }
+
+  .recurso-capitulo-numero {
+    color: var(--heading-color);
+    font-weight: 600;
+  }
+}
+
+.recurso-tags {
+  .badge {
+    background-color: var(--tag-bg, var(--btn-paginator-hover-color));
+    color: var(--text-color);
+    font-weight: normal;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+/* Cards en el listado de recursos */
+.recurso-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--main-border-color);
+  color: var(--text-color);
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: var(--link-color);
+  }
+
+  .card-title a {
+    color: var(--heading-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--link-color);
+    }
+  }
+
+  .text-body-secondary {
+    color: var(--text-muted-color, var(--text-color)) !important;
+  }
+}
+
+.recurso-card-portada {
+  height: 100%;
+  object-fit: cover;
+  min-height: 120px;
+}
+
+/* Listado en tab de recursos */
+.recursos-section {
+  h2 {
+    color: var(--heading-color);
+    border-bottom: 1px solid var(--main-border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}

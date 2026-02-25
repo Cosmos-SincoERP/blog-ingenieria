@@ -1,0 +1,83 @@
+---
+layout: default
+---
+
+<article class="px-1 recurso-libro">
+  <h1 class="dynamic-title">{{ page.title }}</h1>
+
+  <!-- Card de información del libro -->
+  <div class="card recurso-libro-info mb-4">
+    <div class="card-body">
+      <div class="row g-4">
+        {% if page.libro.portada %}
+        <div class="col-12 col-md-4 col-lg-3 text-center">
+          <img src="{{ page.libro.portada }}" alt="Portada de {{ page.title }}" class="img-fluid rounded recurso-libro-portada">
+        </div>
+        {% endif %}
+        <div class="col-12 {% if page.libro.portada %}col-md-8 col-lg-9{% endif %}">
+          <dl class="recurso-libro-meta mb-0">
+            {% if page.libro.autores %}
+            <dt>Autores</dt>
+            <dd>{{ page.libro.autores | join: ", " }}</dd>
+            {% endif %}
+
+            {% if page.libro.editorial %}
+            <dt>Editorial</dt>
+            <dd>{{ page.libro.editorial }}</dd>
+            {% endif %}
+
+            {% if page.libro.anio %}
+            <dt>Año</dt>
+            <dd>{{ page.libro.anio }}</dd>
+            {% endif %}
+
+            {% if page.libro.isbn %}
+            <dt>ISBN</dt>
+            <dd>{{ page.libro.isbn }}</dd>
+            {% endif %}
+
+            {% if page.resumido_por %}
+            <dt>Resumido por</dt>
+            <dd>
+              {% for key in page.resumido_por %}
+                {%- assign autor = site.data.authors[key] -%}
+                {%- if autor -%}
+                  <a href="{{ autor.url }}">{{ autor.name }}</a>{% unless forloop.last %}, {% endunless %}
+                {%- else -%}
+                  {{ key }}{% unless forloop.last %}, {% endunless %}
+                {%- endif -%}
+              {% endfor %}
+            </dd>
+            {% endif %}
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Disclaimer de derechos de autor -->
+  {% include recurso-disclaimer.html %}
+
+  <!-- Contenido libre -->
+  {% if content != "" %}
+  <div class="content mb-4">
+    {{ content }}
+  </div>
+  {% endif %}
+
+  <!-- Lista de capítulos -->
+  {% if page.capitulos %}
+    {% include recurso-capitulos.html %}
+  {% endif %}
+
+  <!-- Tags -->
+  {% if page.tags and page.tags.size > 0 %}
+  <div class="recurso-tags mt-4">
+    <span class="me-1"><i class="fas fa-tags"></i></span>
+    {% for tag in page.tags %}
+      <a href="{{ '/tags/' | append: tag | downcase | replace: ' ', '-' | relative_url }}"
+         class="badge rounded-pill">{{ tag }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+</article>

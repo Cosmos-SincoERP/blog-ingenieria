@@ -1,0 +1,40 @@
+{% assign slug = page.slug | default: page.title | slugify %}
+
+<div class="recurso-capitulos mb-4">
+  <h2>Capítulos</h2>
+  <div class="list-group">
+    {% for cap in page.capitulos %}
+    <div class="list-group-item recurso-capitulo-item">
+      <div class="d-flex w-100 justify-content-between align-items-start">
+        <div>
+          <h5 class="mb-1">
+            <span class="recurso-capitulo-numero">{{ cap.numero }}.</span>
+            {{ cap.titulo }}
+          </h5>
+          {% if cap.resumido_por %}
+          <small class="text-body-secondary">
+            <i class="fas fa-user-edit me-1"></i>
+            {% for key in cap.resumido_por %}
+              {%- assign autor = site.data.authors[key] -%}
+              {%- if autor -%}
+                {{ autor.name }}{% unless forloop.last %}, {% endunless %}
+              {%- else -%}
+                {{ key }}{% unless forloop.last %}, {% endunless %}
+              {%- endif -%}
+            {% endfor %}
+          </small>
+          {% endif %}
+        </div>
+        {% if cap.pdf %}
+        <a href="{{ '/assets/docs/recursos/' | append: slug | append: '/' | append: cap.pdf | relative_url }}"
+           class="btn btn-sm btn-outline-primary ms-3 text-nowrap"
+           target="_blank"
+           rel="noopener noreferrer">
+          <i class="fas fa-file-pdf me-1"></i> PDF
+        </a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

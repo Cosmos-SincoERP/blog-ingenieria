@@ -1,0 +1,35 @@
+{% assign recurso = include.recurso %}
+
+<div class="card recurso-card recurso-libro-card mb-3">
+  <div class="row g-0">
+    {% if recurso.libro.portada %}
+    <div class="col-3 col-md-2">
+      <a href="{{ recurso.url | relative_url }}"><img src="{{ recurso.libro.portada }}" alt="Portada de {{ recurso.title }}" class="img-fluid rounded-start recurso-card-portada"></a>
+    </div>
+    {% endif %}
+    <div class="col">
+      <div class="card-body">
+        <h5 class="card-title">
+          <a href="{{ recurso.url | relative_url }}">{{ recurso.title }}</a>
+        </h5>
+        {% if recurso.libro.autores %}
+        <p class="card-text">
+          <small class="text-body-secondary">
+            <i class="fas fa-pen-fancy me-1"></i>{{ recurso.libro.autores | join: ", " }}
+          </small>
+        </p>
+        {% endif %}
+        {% if recurso.excerpt %}
+        <p class="card-text">{{ recurso.excerpt }}</p>
+        {% endif %}
+        {% if recurso.capitulos %}
+        <p class="card-text">
+          <small class="text-body-secondary">
+            <i class="fas fa-bookmark me-1"></i>{{ recurso.capitulos.size }} capítulo{% if recurso.capitulos.size != 1 %}s{% endif %}
+          </small>
+        </p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
