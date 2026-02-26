@@ -18,9 +18,7 @@ Skill interactivo para registrar un nuevo libro en la sección de recursos del b
 
 ### Tags ya usados en `_recursos/`
 
-```
-!`grep -h "^tags:" _recursos/*.md 2>/dev/null | sed 's/tags: \[//;s/\]//' | tr ',' '\n' | sed 's/^ *//;s/ *$//' | sort -u`
-```
+Usa la herramienta **Grep** con el patrón `^tags:` en el directorio `_recursos/` para obtener los tags existentes. Extrae los valores dentro de los corchetes `[...]` y preséntaselos al usuario.
 
 ## Flujo
 
