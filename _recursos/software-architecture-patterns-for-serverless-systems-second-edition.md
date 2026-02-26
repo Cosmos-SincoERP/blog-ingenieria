@@ -15,6 +15,10 @@ capitulos:
     titulo: "Architecting for Innovation"
     pdf: cap-01-architecting-for-innovation.pdf
     resumido_por: [augusto]
+  - numero: 2
+    titulo: "Defining Boundaries and Letting Go"
+    pdf: cap-02-defining-boundaries-and-letting-go.pdf
+    resumido_por: [augusto]
 resumido_por: [augusto]
 tags: [arquitectura, serverless]
 excerpt: "Guía práctica para diseñar sistemas serverless escalables y resilientes usando microservicios orientados a eventos y micro frontends. Abarca patrones de arquitectura, despliegue multi-región, observabilidad y seguridad en entornos cloud."
