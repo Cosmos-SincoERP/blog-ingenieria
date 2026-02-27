@@ -11,12 +11,14 @@
   {% assign adrs_sorted = site.adrs | sort: "date" | reverse %}
   <ul class="adr-index-list" id="adr-index-list">
     {% for adr in adrs_sorted %}
+    {% if adr.product == "cosmos" or adr.product == page.product %}
     <li class="adr-index-item" data-title="{{ adr.title | downcase }}">
       <a href="{{ adr.url | relative_url }}"{% if adr.url == page.url %} class="active"{% endif %}>
         <span class="adr-status-dot dot-{{ adr.status }}"></span>
         <span>{{ adr.title }}</span>
       </a>
     </li>
+    {% endif %}
     {% endfor %}
   </ul>
 </section>

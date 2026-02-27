@@ -4,6 +4,9 @@
   <div class="card-body">
     <div class="d-flex align-items-center gap-2 mb-2">
       <span class="adr-status-badge status-{{ adr.status }}">{{ adr.status }}</span>
+      {% if adr.product %}
+      <span class="badge adr-product-badge">{{ adr.product }}</span>
+      {% endif %}
       <small class="text-body-secondary">
         <i class="fas fa-calendar-alt me-1"></i>{{ adr.date | date: "%d/%m/%Y" }}
       </small>

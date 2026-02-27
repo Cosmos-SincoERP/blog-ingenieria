@@ -8,8 +8,13 @@ order: 5
 
 {% if adrs.size > 0 %}
 <div class="adrs-section">
-  {% for adr in adrs %}
+  {% assign products = adrs | map: "product" | uniq | sort %}
+  {% for prod in products %}
+  <h2>{{ prod | capitalize }}</h2>
+  {% assign prod_adrs = adrs | where: "product", prod %}
+  {% for adr in prod_adrs %}
     {% include adr-list-card.html adr=adr %}
+  {% endfor %}
   {% endfor %}
 </div>
 {% endif %}

@@ -8,6 +8,13 @@
       </dd>
       {% endif %}
 
+      {% if page.product %}
+      <dt>Producto</dt>
+      <dd>
+        <span class="badge adr-product-badge">{{ page.product }}</span>
+      </dd>
+      {% endif %}
+
       {% if page.date %}
       <dt>Fecha</dt>
       <dd>{{ page.date | date: "%d de %B de %Y" }}</dd>

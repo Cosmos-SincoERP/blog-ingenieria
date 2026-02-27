@@ -1,5 +1,6 @@
 ---
 status: proposed
+product: ""
 date: YYYY-MM-DD
 decision_makers: []
 consulted: []
@@ -9,46 +10,37 @@ tags: []
 excerpt: "Descripción corta de la decisión."
 ---
 
-## Contexto y planteamiento del problema
+## Contexto
 
-<!-- Describir el contexto y el problema que motiva la decisión -->
+<!-- Describir el problema y las fuerzas en juego -->
 
-## Factores de decisión
+## Opciones evaluadas
 
-- Factor 1
-- Factor 2
+### Opción 1 — nombre
 
-## Opciones consideradas
+**Ventajas:**
 
-1. **Opción 1** — breve descripción
-2. **Opción 2** — breve descripción
+- ...
 
-## Resultado de la decisión
+**Desventajas:**
 
-**Opción elegida**: "Opción X", porque [justificación].
+- ...
 
-### Consecuencias
+### Opción 2 — nombre
 
-**Positivas:**
+**Ventajas:**
 
-- Consecuencia positiva 1
+- ...
 
-**Negativas:**
+**Desventajas:**
 
-- Consecuencia negativa 1
+- ...
 
-## Pros y Contras de las opciones
+## Decisión
 
-### Opción 1
+Elegimos [opción], porque [justificación].
 
-- **Pro:** ventaja 1
-- **Contra:** desventaja 1
+## Consecuencias
 
-### Opción 2
-
-- **Pro:** ventaja 1
-- **Contra:** desventaja 1
-
-## Más información
-
-- [Enlace relevante](#)
+- ✅ Consecuencia positiva
+- ⚠️ Trade-off o riesgo a monitorear
