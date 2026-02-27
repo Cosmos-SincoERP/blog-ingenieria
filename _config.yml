@@ -43,6 +43,10 @@ collections:
     output: true
     sort_by: date
     permalink: /recursos/:path/
+  adrs:
+    output: true
+    sort_by: date
+    permalink: /adrs/:path/
 
 defaults:
   - scope:
@@ -69,6 +73,13 @@ defaults:
       layout: recurso
       toc: false
       comments: false
+  - scope:
+      path: ""
+      type: adrs
+    values:
+      layout: adr
+      toc: false
+      comments: false
 
 sass:
   style: compressed
@@ -91,3 +102,4 @@ exclude:
   - LICENSE
   - "*.config.js"
   - package*.json
+  - templates

@@ -1,0 +1,26 @@
+{% assign adr = include.adr %}
+
+<div class="card adr-card mb-3">
+  <div class="card-body">
+    <div class="d-flex align-items-center gap-2 mb-2">
+      <span class="adr-status-badge status-{{ adr.status }}">{{ adr.status }}</span>
+      <small class="text-body-secondary">
+        <i class="fas fa-calendar-alt me-1"></i>{{ adr.date | date: "%d/%m/%Y" }}
+      </small>
+    </div>
+    <h5 class="card-title">
+      <a href="{{ adr.url | relative_url }}">{{ adr.title }}</a>
+    </h5>
+    {% if adr.excerpt %}
+    <p class="card-text">{{ adr.excerpt }}</p>
+    {% endif %}
+    {% if adr.tags and adr.tags.size > 0 %}
+    <div class="adr-tags">
+      {% for tag in adr.tags %}
+        <a href="{{ '/tags/' | append: tag | downcase | replace: ' ', '-' | relative_url }}"
+           class="badge rounded-pill">{{ tag }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<style>.access { display: none !important; }</style>
+
+<section id="adr-index-wrapper" class="ps-0 ps-xl-2">
+  <h2><i class="fas fa-clipboard-list me-1"></i>Índice de ADRs</h2>
+
+  <input type="text"
+         class="adr-search-input"
+         id="adr-search"
+         placeholder="Buscar ADR...">
+
+  {% assign adrs_sorted = site.adrs | sort: "date" | reverse %}
+  <ul class="adr-index-list" id="adr-index-list">
+    {% for adr in adrs_sorted %}
+    <li class="adr-index-item" data-title="{{ adr.title | downcase }}">
+      <a href="{{ adr.url | relative_url }}"{% if adr.url == page.url %} class="active"{% endif %}>
+        <span class="adr-status-dot dot-{{ adr.status }}"></span>
+        <span>{{ adr.title }}</span>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<script>
+(function() {
+  var input = document.getElementById('adr-search');
+  var items = document.querySelectorAll('#adr-index-list .adr-index-item');
+
+  if (input) {
+    input.addEventListener('input', function() {
+      var query = this.value.toLowerCase();
+      items.forEach(function(item) {
+        var title = item.getAttribute('data-title');
+        item.style.display = title.indexOf(query) !== -1 ? '' : 'none';
+      });
+    });
+  }
+})();
+</script>
