@@ -19,6 +19,10 @@ capitulos:
     titulo: "Defining Boundaries and Letting Go"
     pdf: cap-02-defining-boundaries-and-letting-go.pdf
     resumido_por: [augusto]
+  - numero: 3
+    titulo: "Taming the Presentation Tier"
+    pdf: cap-03-taming-the-presentation-tier.pdf
+    resumido_por: [augusto]
 resumido_por: [augusto]
 tags: [arquitectura, serverless]
 excerpt: "Guía práctica para diseñar sistemas serverless escalables y resilientes usando microservicios orientados a eventos y micro frontends. Abarca patrones de arquitectura, despliegue multi-región, observabilidad y seguridad en entornos cloud."
