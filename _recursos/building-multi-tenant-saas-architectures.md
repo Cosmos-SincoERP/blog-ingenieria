@@ -47,6 +47,10 @@ capitulos:
     titulo: "Tenant Isolation"
     pdf: cap-09-tenant-isolation.pdf
     resumido_por: [augusto]
+  - numero: 11
+    titulo: "Serverless SaaS: Architecture Patterns and Strategies"
+    pdf: cap-11-serverless-saas-architecture-patterns-and-strategies.pdf
+    resumido_por: [augusto]
 resumido_por: [augusto]
 tags: [arquitectura, saas, multi-tenancy]
 excerpt: "Guía práctica de Tod Golding, SaaS lead de AWS, que aborda los principios, patrones y estrategias arquitectónicas para construir plataformas de software multi-tenant en la nube. Cubre temas esenciales como el aislamiento de tenants, la partición de datos, el onboarding y el diseño de microservicios en contextos SaaS."
