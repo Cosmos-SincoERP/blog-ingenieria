@@ -20,9 +20,19 @@ social:
 
 theme: jekyll-theme-chirpy
 
-plugins: []
+plugins:
+  - jekyll-archives
 
 paginate: 10
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
 
 kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
