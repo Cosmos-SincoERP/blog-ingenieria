@@ -27,6 +27,10 @@ capitulos:
     titulo: "Trusting Facts and Eventual Consistency"
     pdf: cap-04-trusting-facts-and-eventual-consistency.pdf
     resumido_por: [augusto]
+  - numero: 5
+    titulo: "Turning the Cloud into the Database"
+    pdf: cap-05-turning-the-cloud-into-the-database.pdf
+    resumido_por: [augusto]
 resumido_por: [augusto]
 tags: [arquitectura, serverless]
 excerpt: "Guía práctica para diseñar sistemas serverless escalables y resilientes usando microservicios orientados a eventos y micro frontends. Abarca patrones de arquitectura, despliegue multi-región, observabilidad y seguridad en entornos cloud."
