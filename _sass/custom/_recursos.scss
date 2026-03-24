@@ -56,6 +56,14 @@
     color: var(--heading-color);
     font-weight: 600;
   }
+
+  .recurso-capitulo-excerpt {
+    color: var(--text-muted-color);
+
+    [data-mode="dark"] & {
+      color: var(--text-color);
+    }
+  }
 }
 
 .recurso-tags {

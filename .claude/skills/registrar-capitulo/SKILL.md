@@ -40,6 +40,7 @@ Pregunta al usuario:
 
 - **Número del capítulo**: sugiere el siguiente número disponible
 - **Título del capítulo**
+- **Excerpt**: breve descripción del contenido del capítulo (máximo un párrafo corto, en español). Si el usuario no lo proporciona, redáctalo tú basándote en el título y el contexto del libro.
 - **Resumido por**: quién resumió este capítulo. Muestra la lista de autores disponibles (ver datos dinámicos arriba)
 
 ### 4. Preguntar la ruta del PDF
@@ -75,6 +76,7 @@ Estructura de una entrada de capítulo:
 capitulos:
   - numero: {N}
     titulo: "{Título del capítulo}"
+    excerpt: "{Breve descripción del contenido del capítulo.}"
     pdf: {nombre-pdf}
     resumido_por: [{claves de autores}]
 ```

@@ -11,18 +11,8 @@
             <span class="recurso-capitulo-numero">{{ cap.numero }}.</span>
             {{ cap.titulo }}
           </h5>
-          {% if cap.resumido_por %}
-          <small class="text-body-secondary">
-            <i class="fas fa-user-edit me-1"></i>
-            {% for key in cap.resumido_por %}
-              {%- assign autor = site.data.authors[key] -%}
-              {%- if autor -%}
-                {{ autor.name }}{% unless forloop.last %}, {% endunless %}
-              {%- else -%}
-                {{ key }}{% unless forloop.last %}, {% endunless %}
-              {%- endif -%}
-            {% endfor %}
-          </small>
+          {% if cap.excerpt %}
+          <p class="mb-0 recurso-capitulo-excerpt"><small>{{ cap.excerpt }}</small></p>
           {% endif %}
         </div>
         {% if cap.pdf %}

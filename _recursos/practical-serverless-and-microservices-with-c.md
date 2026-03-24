@@ -14,14 +14,17 @@ libro:
 capitulos:
   - numero: 1
     titulo: "Demystifying Serverless Applications"
+    excerpt: "Introduce los conceptos fundamentales de serverless: qué son las funciones como servicio, cuándo usarlas y cómo se integran en una arquitectura moderna de .NET en Azure."
     pdf: cap-01-demystifying-serverless-applications.pdf
     resumido_por: [camilo]
   - numero: 2
     titulo: "Demystifying Microservices Applications"
+    excerpt: "Desmitifica la arquitectura de microservicios explicando sus principios, ventajas y desafíos en el contexto del stack .NET y Azure."
     pdf: cap-02-demystifying-microservices-applications.pdf
     resumido_por: [camilo]
   - numero: 3
     titulo: "Setup and Theory - Docker and Onion Architecture"
+    excerpt: "Establece la base práctica del libro: configuración del entorno con Docker y fundamentos de la arquitectura en cebolla (Onion Architecture) para estructurar microservicios en .NET."
     pdf: cap-03-setup-and-theory-docker-and-onion-architecture.pdf
     resumido_por: [camilo]
 resumido_por: [camilo]

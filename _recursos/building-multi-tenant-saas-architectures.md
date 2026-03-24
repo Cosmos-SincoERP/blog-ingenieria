@@ -13,42 +13,52 @@ libro:
 capitulos:
   - numero: 1
     titulo: "The SaaS Mindset"
+    excerpt: "Introduce el pensamiento SaaS: por qué los modelos tradicionales no escalan y cómo el enfoque multi-tenant transforma la forma de construir y operar software."
     pdf: cap-01-the-saas-mindset.pdf
     resumido_por: [augusto]
   - numero: 2
     titulo: "Multi-Tenant Architecture Fundamentals"
+    excerpt: "Explora los conceptos fundamentales de la arquitectura multi-tenant, incluyendo los modelos de aislamiento y las implicaciones de compartir infraestructura entre múltiples clientes."
     pdf: cap-02-multi-tenant-architecture-fundamentals.pdf
     resumido_por: [augusto]
   - numero: 3
     titulo: "Multi-tenant Deployment Models"
+    excerpt: "Analiza los modelos de despliegue para sistemas multi-tenant —silo, pool y bridge— con sus ventajas, desventajas y criterios para elegir entre ellos."
     pdf: cap-03-multi-tenant-deployment-models.pdf
     resumido_por: [augusto]
   - numero: 4
     titulo: "Onboarding and Identity"
+    excerpt: "Describe cómo gestionar el proceso de incorporación de nuevos tenants y cómo manejar la identidad de usuarios en el contexto de un sistema multi-tenant."
     pdf: cap-04-onboarding-and-identity.pdf
     resumido_por: [augusto]
   - numero: 5
     titulo: "Tenant Management"
+    excerpt: "Cubre las estrategias para gestionar el ciclo de vida de los tenants: aprovisionamiento, configuración, actualización y eliminación de forma controlada."
     pdf: cap-05-tenant-management.pdf
     resumido_por: [augusto]
   - numero: 6
     titulo: "Tenant Authentication and Routing"
+    excerpt: "Explica cómo autenticar usuarios en el contexto de un tenant específico y cómo enrutar las solicitudes hacia los recursos correctos según el tenant activo."
     pdf: cap-06-tenant-authentication-and-routing.pdf
     resumido_por: [augusto]
   - numero: 7
     titulo: "Building Multi-tenant Services"
+    excerpt: "Presenta patrones para diseñar servicios que operen eficientemente en entornos multi-tenant, gestionando el contexto de tenant y el acceso a recursos compartidos."
     pdf: cap-07-building-multi-tenant-services.pdf
     resumido_por: [augusto]
   - numero: 8
     titulo: "Data Partitioning"
+    excerpt: "Analiza las estrategias de particionamiento de datos para separar y aislar la información de cada tenant en la capa de persistencia."
     pdf: cap-08-data-partitioning.pdf
     resumido_por: [augusto]
   - numero: 9
     titulo: "Tenant Isolation"
+    excerpt: "Profundiza en los mecanismos técnicos para garantizar que los recursos y datos de un tenant no sean accesibles por otros, tanto en cómputo como en almacenamiento."
     pdf: cap-09-tenant-isolation.pdf
     resumido_por: [augusto]
   - numero: 11
     titulo: "Serverless SaaS: Architecture Patterns and Strategies"
+    excerpt: "Explora cómo el modelo serverless se alinea con los requerimientos de una arquitectura SaaS, con patrones específicos para Functions as a Service en contextos multi-tenant."
     pdf: cap-11-serverless-saas-architecture-patterns-and-strategies.pdf
     resumido_por: [augusto]
 resumido_por: [augusto]
