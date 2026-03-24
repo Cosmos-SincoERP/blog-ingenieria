@@ -38,7 +38,7 @@ capitulos:
     resumido_por: [augusto]
   - numero: 6
     titulo: "A Best Friend for the Frontend"
-    excerpt: "Los servicios Backend for Frontend (BFF) se diseñan alrededor de las actividades de los usuarios finales, otorgando a cada actividad su propio servicio autónomo con almacén de datos dedicado, funciones de comando, consulta, escucha y disparo. Se fragmenta la responsabilidad para que cada equipo sea dueño tanto del frontend como del backend, eliminando dependencias síncronas mediante vistas materializadas y eventos de dominio, y estructurando internamente cada función con una nano arquitectura hexagonal. Según la fase del ciclo de vida de los datos, se aplican variantes especializadas del patrón BFF —CRUD, lista de valores, tareas, búsqueda, acciones, dashboards, reportes y archivo— cada una optimizada para su patrón de acceso específico."
+    excerpt: "Cada actividad de usuario recibe su propio servicio BFF autónomo con almacén de datos dedicado y una API trilateral de comandos, consultas, listener y trigger. Internamente, cada función se estructura con una nano arquitectura hexagonal que separa lógica de negocio, connectors y handlers. Según el patrón de acceso, aplicamos variantes especializadas —CRUD, lista de valores, tareas, búsqueda, acciones, dashboards, reportes y archivo— alineadas con las fases del ciclo de vida de los datos."
     pdf: cap-06-a-best-friend-for-the-frontend.pdf
     resumido_por: [augusto]
 resumido_por: [augusto]
