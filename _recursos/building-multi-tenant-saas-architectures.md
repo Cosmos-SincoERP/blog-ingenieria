@@ -61,6 +61,16 @@ capitulos:
     excerpt: "Explora cómo el modelo serverless se alinea con los requerimientos de una arquitectura SaaS, con patrones específicos para Functions as a Service en contextos multi-tenant."
     pdf: cap-11-serverless-saas-architecture-patterns-and-strategies.pdf
     resumido_por: [augusto]
+  - numero: 12
+    titulo: "Tenant-Aware Operations"
+    excerpt: "Las operaciones en un entorno multi-tenant trascienden el monitoreo técnico tradicional: medimos actividad por tenant, consumo de recursos, costo por tenant y salud del negocio desde un panel unificado. Instrumentamos y agregamos estos datos en una consola con contexto de tenant, y estructuramos la automatización del despliegue con feature flags y canary releases para controlar el alcance de cada lanzamiento."
+    pdf: cap-12-tenant-aware-operations.pdf
+    resumido_por: [augusto]
+  - numero: 13
+    titulo: "SaaS Migration Strategies"
+    excerpt: "La migración a SaaS exige equilibrar la transformación técnica con los imperativos del negocio. Analizamos tres patrones principales —lift-and-shift en modo silo, migración por capas y migración servicio a servicio— y mostramos cómo el control plane se convierte en el primer cimiento obligado de cualquier camino de migración. La clave está en inyectar tenancy desde el día uno para que cada paso posterior construya sobre una base multi-tenant real."
+    pdf: cap-13-saas-migration-strategies.pdf
+    resumido_por: [augusto]
 resumido_por: [augusto]
 tags: [arquitectura, saas, multi-tenancy]
 excerpt: "Guía práctica de Tod Golding, SaaS lead de AWS, que aborda los principios, patrones y estrategias arquitectónicas para construir plataformas de software multi-tenant en la nube. Cubre temas esenciales como el aislamiento de tenants, la partición de datos, el onboarding y el diseño de microservicios en contextos SaaS."
